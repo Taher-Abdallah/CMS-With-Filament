@@ -1,61 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+##  🏥 Clincal Management System 
 
-## About Laravel
+## 📌 Overview  
+This project is a **Clincal Management System** built with **Laravel 12** and **FilamentPHP 3**.  
+It allows clinics and hospitals to manage doctors, patients, appointments, and invoices efficiently.  
+The system also includes **widgets for daily appointments** and **monthly revenue tracking** with interactive charts.  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Features  
+- 👨‍⚕️ Manage Doctors (add, edit, delete).  
+- 🧑‍🤝‍🧑 Manage Patients.  
+- 📅 Schedule and track Appointments.  
+- 🧾 Generate and manage Invoices with amounts.  
+- 📊 Dashboard Widgets:  
+  - **Today’s Appointments**.  
+  - **Monthly Revenue Chart**.  
+- 🔐 Role-based Authorization with Laravel Policies.  
+- 📂 Clean architecture with Laravel Resources.  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🛠️ Tech Stack  
+- **Laravel 12** (Backend Framework)  
+- **FilamentPHP 3** (Admin Panel & Dashboard)  
+- **MySQL** (Database)  
+- **TailwindCSS** (Styling via Filament)  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## ⚙️ Installation  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Taher-Abdallah/CMS-With-Filament
+Next, copy your .env.example file as .env and configure your Database connection.   
+   ```bash
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=YOUR-DATABASE-NAME
+   DB_USERNAME=YOUR-DATABASE-USERNAME
+   DB_PASSWORD=YOUR-DATABASE-PASSWROD
+  ```   
+  ##  Run Packages and helpers
 
-## Laravel Sponsors
+  You have to all used packages and load helpers as below.
+   ```bash
+composer install
+npm install
+npm run buil
+```
+## Generate new application key
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+You have to generate new application key as below.
+   ```bash
+php artisan key:generate
+```
 
-### Premium Partners
+## Run Migrations and seeders
+You have to run all the migration files included with the project and also run seeders as below.
+   ```bash
+php artisan migrate
+php artisan db:seed
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## 📸 Screenshots
+### Dashboard 
+![Screenshot1](DASHBOARD1.png)
+![Screenshot2!](Dashboard2.png)
 
-## Contributing
+### Doctor List 
+![Doctor!](doctors.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Patient List 
 
-## Code of Conduct
+![Patient!](patients.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Appointment List 
+![Appointment!](appointment.png)
 
-## Security Vulnerabilities
+### Invoices List 
+![Invoice!](Invoices.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
